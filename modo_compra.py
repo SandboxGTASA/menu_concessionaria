@@ -1,5 +1,5 @@
 from tkinter import *
-from fixmenu import *
+import os
 from random import randint as ri
 import locale
 locale.setlocale(locale.LC_ALL, 'Portuguese_Brazil.1252')  # ou pt_BR.UTF-8'
@@ -15,6 +15,8 @@ gerar_veiculos = []
 valor_veiculos = []
 aluguel_veiculos = []
 
+def MENU():
+	os.system('menu_concessionaria.py')
 
 def setmoeda(valor):
     return locale.currency(valor, grouping=True, symbol='r$')
